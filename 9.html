@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9</title>
+</head>
+<body>
+    <script>
+        function verdade(objeto, chave) {
+            for (propriedade in objeto) { //percorre
+                if (propriedade === chave) {
+                    return true // retorna true se a chave existir
+                }
+            }
+            return false // retorna false se não
+        }
+
+        const pessoa = {
+            nome: "Eduarda",
+            idade: 16,
+            email: "dudamasson.c@gmail.com"
+        }
+
+        console.log(verdade(pessoa, "nome")); // true
+        console.log(verdade(pessoa, "altura")); // false
+
+    </script>
+</body>
+</html>

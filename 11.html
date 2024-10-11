@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+<body>
+    <script>
+        const Calculadora = {
+            Cor: "Azul",
+            Tamanho: "média",
+            Material: "Plástico",
+            Teclas: 15,
+            Formato: "Quadrado",
+            somar(a,b){
+		        return a + b
+	        },
+            subtrair(a,b){
+                return a - b
+            },
+            multiplicar(a,b){
+                return a * b
+            },
+            clicar() {
+                alert("Click")
+                Calculadora.Teclas += 1
+            },
+            fabricacao: {
+		        cidade: "Brasil"
+	        }
+}
+    </script>
+</body>
+</html>
