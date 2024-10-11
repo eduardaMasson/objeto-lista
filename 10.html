@@ -10,19 +10,29 @@
         function resultado(objeto) {
             
         }
-        const pessoa1 = {
-            nome: "Ana", 
-            idade: 25
+        const pessoas = [
+            {
+                nome: "Ana", 
+                idade: 25  
+            },
+            {
+                nome: "Duda",
+                idade: 30
+            },
+            {
+                nome: "Maria",
+                idade: 28
+            }
+        ]
+            
+        var maior = 0
+
+        for (i in pessoas) {
+            if (pessoas[i].idade> maior) {
+                maior = pessoas[i].idade
+            }
         }
-        const pessoa2 = {
-            nome: "Carlos",
-            idade: 30
-        }
-        const pessoa3 = {
-            nome: "Maria",
-            idade: 28
-        }
-        resultado(Pessoa) //exibir
+        console.log(maior)
     </script>
 </body>
 </html>
